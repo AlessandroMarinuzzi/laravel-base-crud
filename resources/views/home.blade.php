@@ -6,4 +6,5 @@
 @section('main_content')
 
 <h1>It is Comic Home</h1>
+
 @endsection
