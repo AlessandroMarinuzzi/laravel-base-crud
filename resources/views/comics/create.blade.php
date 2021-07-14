@@ -4,9 +4,9 @@
 
 
 @section('main_content')
-<div class="add_comic_form container">
+<div class="container">
     <h1>Add a comic</h1>
-    <form action="{{route('comics.store')}}" method="POST">
+    <form class="add_comic_form" action="{{route('comics.store')}}" method="POST">
         @csrf
         <div class="form_group">
             <label for="cover">Cover Image</label>
@@ -30,7 +30,7 @@
         </div>
         <div class="form_group">
             <label for="series">Price</label>
-            <input type="text" name="price" id="price" placeholder="Insert Price" aria-describedby="price">
+            <input type="text" name="price" id="price" placeholder="€" aria-describedby="price">
             <small id="price">Insert Comic Price</small>
         </div>
         <button type="submit">Generate</button>

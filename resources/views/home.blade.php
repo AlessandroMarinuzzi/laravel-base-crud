@@ -5,6 +5,8 @@
 
 @section('main_content')
 
-<h1>It is Comic Home</h1>
+<div class="container">
+    <h1>Click Links Above.</h1>
+</div>
 
 @endsection

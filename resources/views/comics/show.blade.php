@@ -7,14 +7,16 @@
     <div class="container">
         
         <div class="comic_card">
-            <a href="" class="single_comic">
+            <div class="single_comic">
                 <img src="{{$comic->cover}}" alt="">
-            </a>
+            </div>
+            <div class="single_card_details">
                 <h2 class="title">{{$comic->title}}</h2>
                 <p class="plot">{{$comic->plot}}</p>
                 <h3 class="artist">{{$comic->artist}}</h3>
-                <span class="price">{{$comic->price}}</span>
+                <span class="price">{{$comic->price}} €</span>
             </div>
+        </div>
         
     </div>
 @endsection

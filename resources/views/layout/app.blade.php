@@ -15,9 +15,8 @@
     </head>
     <body>
         <header id="site_header">
-
-        </header>
             @include('partials.header')
+        </header>
         <main id="site_main">
             @yield('main_content')
         </main>
