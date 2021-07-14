@@ -1,3 +1,4 @@
-<div class="container">
+<nav class="container">
     <a href="{{route('comics.index')}}">Comics</a>
-</div>
+    <a href="{{route('comics.create')}}">Add Comic</a>
+</nav>
