@@ -10,7 +10,7 @@
     @foreach($comics as $comic)
     <div class="comic_card">
         <a href="" class="single_comic">
-            <img width="150" src="{{$comic->cover}}" alt="">
+            <img src="{{$comic->cover}}" alt="">
         </a>
             <h2 class="title">{{$comic->title}}</h2>
             <p class="plot">{{$comic->plot}}</p>
