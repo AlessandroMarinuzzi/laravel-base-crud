@@ -84,6 +84,27 @@ body {
   margin-left: 15px;
 }
 
+.single_comic_card .admin_buttons {
+  display: flex;
+}
+
+.single_comic_card .admin_buttons button {
+  margin-right: 15px;
+  padding: 0.5rem;
+  border-style: none;
+  background-color: black;
+  color: orange;
+}
+
+.single_comic_card .admin_buttons button a {
+  text-decoration: none;
+  color: orange;
+}
+
+.single_comic_card .admin_buttons button:hover {
+  cursor: pointer;
+}
+
 .add_comic_form {
   margin: auto;
   display: flex;

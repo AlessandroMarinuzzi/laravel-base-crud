@@ -43,4 +43,21 @@
         justify-content: space-evenly;
         margin-left: 15px;
     }
+    .admin_buttons{
+        display: flex;
+        button{
+            margin-right: 15px;
+            padding: 0.5rem;
+            border-style: none;
+            background-color: black;
+            color: orange;
+            a{
+                text-decoration: none;
+                color: orange;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
 }

@@ -6,15 +6,20 @@
 @section('main_content')
 <div class="container">
     <h1>Add a comic</h1>
-    <form class="add_comic_form" action="{{route('comics.update', '$comic->id')}}" method="POST">
+    <form class="add_comic_form" action="{{route('comics.update', $comic->id)}}" method="POST">
         @csrf
         @method('PUT')
         <div class="form_group">
             <label for="cover">Cover Image</label>
             <input type="text" name="cover" id="cover" placeholder="Insert Image Link" value="{{$comic->cover}}">
-            <img width="100" src="{{$comic->cover}}" alt="">
             <small id="helpId">Paste Image Link Address</small>
         </div>
+
+        <div class="form_group">
+            <h4>Currunt Cover</h4>    
+            <img width="100" src="{{$comic->cover}}" alt="">
+        </div>
+
         <div class="form_group">
             <label for="title">Title</label>
             <input name="title" id="title" placeholder="Insert Title" value="{{$comic->title}}"></input>
