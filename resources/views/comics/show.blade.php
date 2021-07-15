@@ -6,7 +6,7 @@
 @section('main_content')
     <div class="container">
         
-        <div class="comic_card">
+        <div class="single_comic_card">
             <div class="single_comic">
                 <img src="{{$comic->cover}}" alt="">
             </div>
